@@ -18,6 +18,7 @@ nav {
 
 .logo {
   width: 300px;
+    display: none;
 }
 
 ul {
@@ -73,6 +74,10 @@ li:hover {
 @media (min-width: 768px) {
   .blogs {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .logo{
+    display: inline-block;
+
   }
 }
 

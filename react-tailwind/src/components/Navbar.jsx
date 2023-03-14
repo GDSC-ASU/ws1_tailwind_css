@@ -3,7 +3,7 @@ import React from "react";
 function Navbar() {
   return (
     <nav className="bg-white shadow-lg mx-auto px-[20px] py-[10px] flex justify-between items-center">
-      <img src="/assets/gdsc-asu-logo.png" className="w-[300px]" />
+      <img src="/assets/gdsc-asu-logo.png" className="w-[300px] md:inline-block hidden" />
       <ul className="flex">
         <li className="px-[15px] py-[10px] rounded-md hover:text-gray-600 font-medium cursor-pointer">
           Home
