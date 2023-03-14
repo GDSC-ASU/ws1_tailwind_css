@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <Navbar />
-      <div className="px-4 mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+      <div className="px-[20px] mt-[40px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
         <Blog
           imgLink="/assets/tailwindcss-logo.png"
           blogTitle="Tailwind"
