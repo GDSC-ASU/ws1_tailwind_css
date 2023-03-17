@@ -1,33 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import Navbar from "./components/Navbar"
+import Blog from "./components/Blog"
+import "./styles/Blog.css"
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <Navbar />
+      <div className="blogs">
+        <Blog
+          imgLink="./assets/tailwindcss-logo.png"
+          blogTitle="Tailwind"
+          blogDesc="Tailwind CSS is an open source CSS framework. The main feature of this library is that,
+      unlike other CSS frameworks, it does not provide a series of predefined classes for elements."
+        />
+        <Blog
+          imgLink="/assets/vim-logo.png"
+          blogTitle="Vim"
+          blogDesc="Vim or ViImproved - the ubiquitous text editor
+            Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as vi with most UNIX systems and with Apple OS X."
+        />
+        <Blog
+          imgLink="./assets/go-logo.png"
+          blogTitle="Go Programming Language"
+          blogDesc="Go is a statically typed, compiled high-level programming language designed at Google by Robert Griesemer, Rob Pike, and Ken Thompson"
+        />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </div>
   )
 }
