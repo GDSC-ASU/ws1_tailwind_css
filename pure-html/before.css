@@ -18,7 +18,7 @@ nav {
 
 .logo {
   width: 300px;
-    display: none;
+  display: none;
 }
 
 ul {
@@ -61,21 +61,22 @@ li:hover {
   padding-right: 20px;
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(1, minmax(0, 1fr));
+  grid-template-columns: repeat(1, 1fr);
   gap: 30px;
 }
 
 @media (min-width: 640px) {
   .blogs {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (min-width: 768px) {
   .blogs {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns: repeat(3, 1fr);
   }
-  .logo{
+
+  .logo {
     display: inline-block;
 
   }
