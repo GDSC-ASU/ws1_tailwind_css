@@ -2,59 +2,59 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>GDSC Blog</title>
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.17/dist/tailwind.min.css"/> -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
 </head>
 
-<body class="bg-gray-200">
-<nav class="bg-white shadow-lg mx-auto px-[20px] py-[10px] flex justify-between items-center">
-    <img src="./assets/gdsc-asu-logo.png"
-         class="w-[300px] md:inline-block hidden">
-    <ul class="flex">
-        <li class="px-[15px] py-[10px] rounded-md hover:text-gray-600 font-medium cursor-pointer">Home</li>
-        <li class="px-[15px] py-[10px] rounded-md hover:text-gray-600 font-medium cursor-pointer">About</li>
-        <li class="px-[15px] py-[10px] rounded-md hover:text-gray-600 font-medium cursor-pointer">Contact</li>
-    </ul>
-    <p class="rounded-md bg-blue-500 text-white py-[10px] px-[20px] hover:bg-blue-600 cursor-pointer">Sign In</p>
-</nav>
-<div class="px-[20px] mt-[40px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-    <div class="bg-white hover:shadow-lg h-full">
-        <img class="h-[240px] w-full"
-             src="./assets/tailwindcss-logo.png"
-             alt="Blog Post"/>
-        <div class="p-[20px]">
-            <h2 class="text-xl font-bold text-gray-800">Tailwind CSS</h2>
-            <p class="mt-[10px] text-gray-600">
-                Tailwind CSS is an open source CSS framework. The main feature of this library is that,
-                unlike other CSS frameworks, it does not provide a series of predefined classes for elements.
-            </p>
+<body class="bg-[#f1f5f9]">
+    <nav class="bg-white flex justify-between shadow-lg p-[10px] items-center">
+        <img src="./assets/gdsc-asu-logo.png" alt="GDSC" class="w-[300px] hidden md:inline-block">
+        <ul class="flex">
+            <li class="cursor-pointer px-[10px] text-[20px] font-bold hover:text-[#4b5563]">Home</li>
+            <li class="cursor-pointer px-[10px] text-[20px] font-bold hover:text-[#4b5563]">About</li>
+            <li class="cursor-pointer px-[10px] text-[20px] font-bold hover:text-[#4b5563]">Contact</li>
+        </ul>
+        <button class="bg-[#3b82f6] hover:bg-[#2563eb] text-white text-[20px] rounded-[7.5px] cursor-pointer px-[20px] py-[10px]">Sign in</button>
+    </nav>
+    <div class="m-[20px] mt-[40px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-[30px]">
+        <div class="bg-white hover:shadow-lg">
+            <img src="./assets/tailwindcss-logo.png" alt="Blog Post" class="w-full h-[240px]" />
+            <div class="p-[20px]">
+                <h2 class="font-bold text-[20px]">Tailwind CSS</h2>
+                <p>
+                    Tailwind CSS is an open source CSS framework. The main feature of this library is that,
+                    unlike other CSS frameworks like Bootstrap,
+                    it does not provide a series of predefined classes for elements such as buttons
+                    or tables.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="bg-white hover:shadow-lg h-full">
-        <img class="h-[240px] w-full"
-             src="./assets/vim-logo.png"
-             alt="Blog Post"/>
-        <div class="p-[20px]">
-            <h2 class="text-xl font-bold text-gray-800">Vim</h2>
-            <p class="mt-[10px] text-gray-600">
-            Vim or ViImproved - the ubiquitous text editor
-            Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as "vi" with most UNIX systems and with Apple OS X.
-            </p>
+        <div class="bg-white hover:shadow-lg">
+            <img src="./assets/vim-logo.png" alt="Blog Post" class="w-full h-[240px]" />
+            <div class="p-[20px]">
+                <h2 class="font-bold text-[20px]">Vim</h2>
+                <p>
+                    Vim or ViImproved - the ubiquitous text editor
+                    Vim is a highly configurable text editor built to make creating and changing any kind of text very
+                    efficient. It is included as "vi" with most UNIX systems and with Apple OS X.
+                </p>
+            </div>
         </div>
-    </div>
-    <div class="bg-white hover:shadow-lg h-full">
-        <img class="h-[240px] w-full" src="./assets/go-logo.png"
-             alt="Blog Post"/>
-        <div class="p-[20px]">
-            <h2 class="text-xl font-bold text-gray-800">Go Programming Language</h2>
-            <p class="mt-[10px] text-gray-600">
-                Go is a statically typed, compiled high-level programming language designed at Google by Robert
-                Griesemer,
-                Rob Pike, and Ken Thompson
-            </p>
+        <div class="bg-white hover:shadow-lg">
+            <img src="./assets/go-logo.png" alt="Blog Post" class="w-full h-[240px]" />
+            <div class="p-[20px]">
+                <h2 class="font-bold text-[20px]">Go Programming Language</h2>
+                <p>
+                    Go is a statically typed, compiled high-level programming language designed at Google by Robert
+                    Griesemer,
+                    Rob Pike, and Ken Thompson
+                </p>
+            </div>
         </div>
     </div>
 </body>
+
+</html>
